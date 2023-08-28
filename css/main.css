@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.notifications {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+  z-index: 10;
+}
+
+.notification {
+  width: 250px;
+  position: relative;
+  bottom: 0;
+  right: -100%;
+  margin: 0 10px 10px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  transition: all 1.2s;
+}
+
+.show {
+  right: 0;
+}
+
+.error {
+  transform: all 2s;
+}
+
+.bar-error {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  height: 2px;
+  width: 100%;
+  transition: all 2s;
+}
+
+.bar-success {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+  height: 2px;
+  width: 100%;
+  transition: all 2s;
+}
+
+.bar-invalid {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: yellow;
+  height: 2px;
+  width: 100%;
+  transition: all 2s;
+}
+
+.error-span,
+.success-span,
+.Invalid-span {
+  font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  height: 100%;
+}
+
+.error-span {
+  background-color: red;
+}
+
+.success-span {
+  background-color: green;
+}
+
+.Invalid-span {
+  background-color: yellow;
+}
+
+.buttons {
+  width: 200px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.buttons button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: #191919;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
